@@ -1,6 +1,10 @@
-const apps = require('express')();
+const express = require('express');
+const apps = express();
 const http = require('http').createServer(apps);
 const socket = require('socket.io')(http);
+
+
+apps.use(express.static('public'));
 
 apps.get('/', function (request, response) {
   response.sendFile(__dirname + '/index.html');
