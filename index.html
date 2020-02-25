@@ -2,17 +2,29 @@
 <html>
 
 <head>
-  <title>Socket.IO chat</title>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+  <meta content="width=device-width, inital-scale=1, user-scalable=0, minimum-scale=1, maximum-scale=1"
+    name="viewport" />
+  <meta content="Pembelajaran Web Socket" name="title" />
+  <meta content="Ini adalah sebuah wahana pembelaran yang mempelajari web socket menggunakan socket.io"
+    name="description" />
+  <meta content="Belajar Web Socket, Web Socket, Socket.io, Realtime Chat" name="keywords" />
+  <title>Pembelajaran Web Socket | Socket.io</title>
   <script src="/socket.io/socket.io.js"></script>
   <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
   <link rel="stylesheet" type="text/css" href="styles/styles-chat.css">
 </head>
 
 <body>
-  <ul id="messages"></ul>
-  <form action="">
-    <input id="message" autocomplete="off" /><button>Send</button>
-  </form>
+  <div class="wrapper-message" id="wrapper-message">
+    <ul id="messages"></ul>
+    <form action="">
+      <input id="message" autocomplete="off" placeholder="Type your message"/><button>Send</button>
+    </form>
+  </div>
 </body>
 <script src="scripts/sockets.js"></script>
 
